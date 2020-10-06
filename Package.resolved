@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CLIFoundation",
+        "repositoryURL": "https://github.com/henrik-dmg/CLIFoundation",
+        "state": {
+          "branch": null,
+          "revision": "44db85e2cf04e78265956b3326a4346b87d36d07",
+          "version": "0.6.3"
+        }
+      },
+      {
+        "package": "ImageResizer",
+        "repositoryURL": "https://github.com/henrik-dmg/ImageResizer",
+        "state": {
+          "branch": null,
+          "revision": "3f87a63fe8dca28c98aae4be9620ff9b16d20d50",
+          "version": "0.6.0"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "92646c0cdbaca076c8d3d0207891785b3379cbff",
+          "version": "0.3.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
