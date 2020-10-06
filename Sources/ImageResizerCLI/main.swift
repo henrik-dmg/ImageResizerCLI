@@ -22,7 +22,9 @@ struct HPResize: ParsableCommand {
     static var configuration = CommandConfiguration(
         commandName: "image-resizer",
         abstract: "Resizes an input image to a specified scale",
-        helpNames: .shortAndLong)
+        version: "1.0",
+        helpNames: .shortAndLong
+    )
 
     func run() throws {
         var isDirectory = ObjCBool(false)
