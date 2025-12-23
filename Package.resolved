@@ -1,34 +1,33 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "CLIFoundation",
-        "repositoryURL": "https://github.com/henrik-dmg/CLIFoundation",
-        "state": {
-          "branch": null,
-          "revision": "44db85e2cf04e78265956b3326a4346b87d36d07",
-          "version": "0.6.3"
-        }
-      },
-      {
-        "package": "ImageResizer",
-        "repositoryURL": "https://github.com/henrik-dmg/ImageResizer",
-        "state": {
-          "branch": null,
-          "revision": "2f1d6959a68acd046cc4120b5d2b3d98b27e2ff5",
-          "version": "0.6.1"
-        }
-      },
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser",
-        "state": {
-          "branch": null,
-          "revision": "92646c0cdbaca076c8d3d0207891785b3379cbff",
-          "version": "0.3.1"
-        }
+  "originHash" : "069e240ff03ff29ccf9fc8ae32aeb1b7312e9c361cbeb4eb469e06bc21b7193e",
+  "pins" : [
+    {
+      "identity" : "clifoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/henrik-dmg/CLIFoundation",
+      "state" : {
+        "revision" : "f9a4cd483b205fae1f0e6c106203c5e469492102",
+        "version" : "0.8.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "hpimageutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/henrik-dmg/HPImageUtils",
+      "state" : {
+        "branch" : "main",
+        "revision" : "12206fa2a6de421de4ca5e71ddf218325c17941c"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
+      }
+    }
+  ],
+  "version" : 3
 }

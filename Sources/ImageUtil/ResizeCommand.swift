@@ -1,8 +1,15 @@
 import Foundation
 import ArgumentParser
-import ImageResizer
+import HPImageUtils
 
-struct HPResize: ParsableCommand {
+struct ResizeCommand: ParsableCommand {
+
+	static let configuration = CommandConfiguration(
+		commandName: "resize",
+		abstract: "Resizes an input image to a specified scale",
+		version: "2.0.0",
+		helpNames: .shortAndLong
+	)
 
     @Argument(help: "The image that should be resized")
     var image: URL
@@ -18,13 +25,6 @@ struct HPResize: ParsableCommand {
 
     @Flag(help: "Prints additional information during rendering")
     var verbose = false
-
-    static var configuration = CommandConfiguration(
-        commandName: "image-resizer",
-        abstract: "Resizes an input image to a specified scale",
-        version: "1.0",
-        helpNames: .shortAndLong
-    )
 
     func run() throws {
         var isDirectory = ObjCBool(false)
@@ -52,7 +52,10 @@ struct HPResize: ParsableCommand {
 extension URL: ExpressibleByArgument {
 
     public init?(argument: String) {
-        self.init(fileURLWithPath: argument)
+		guard let url = URL.parse(argument) else {
+			return nil
+		}
+		self = url
     }
 
 }
@@ -67,5 +70,3 @@ extension ImageFormat: ExpressibleByArgument {
     }
 
 }
-
-HPResize.main()
